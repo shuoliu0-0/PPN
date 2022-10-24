@@ -1,0 +1,31 @@
+{
+   "Token": "##Token##",
+   "business_flag": "##business_flag##",
+   "model_local_file_path": "##model_local_file_path##",
+   "host_num": ##host_num##,
+   "host_gpu_num":##host_gpu_num##,
+   "image_full_name": "mirrors.tencent.com/drug_ai/g-tlinux2.2-python3.6-cuda10.0-cudnn7.6-tf2.0-openmpi4.0.3-nccl2.5.6-ofed4.6-horovod-rdkit2019.03.3.0-pytorch1.1:latest",
+   "is_elasticity":##is_elasticity##,
+   "hyper_parameters": {
+     "DATA_PATH": "/apdcephfs/private_sholiu/grover/",
+     "save_path": "/apdcephfs/private_sholiu/grover/grover_saved_test/",
+     "dataset": "all_smi_filtered_ss",
+     "epochs": 1000,
+     "warmup_epochs": 2,
+     "backbone": "gtrans",
+     "embedding_output_type": "both",
+     "source_branch": "atom",
+     "batch_size": 512,
+     "init_lr": 1,
+     "max_lr": 0.00004,
+     "final_lr": 1,
+     "hidden_size": 8,
+     "depth": 6,
+     "dropout": 0.05,
+     "activation": "PReLU",
+     "weight_decay": 0.0000001,
+     "num_attn_head": 4,
+     "num_mt_block": 1,
+     "dist_coff": 0.1
+   }
+ }
