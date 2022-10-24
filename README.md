@@ -4,7 +4,7 @@ A pharmacophore pre-trained method for imbalanced virtual screening
 ## Requirements
 Our work is implementated based on PyTorch.
 
-'''
+'''bash
 python >= 3.6.8
 conda >= 4.9.2
 PyTorch >= 1.1.0
@@ -17,7 +17,7 @@ rdkit >= '2019.03.4'
 
 ####Molecular feature extraction
 
-'''
+'''bash
 python3.6 scripts/save_features.py --data_path data/path/pretrain/data_example.csv \
                                    --save_path save/path/data_example.npz \
                                    --features_generator rdkit_2d_normalized \
